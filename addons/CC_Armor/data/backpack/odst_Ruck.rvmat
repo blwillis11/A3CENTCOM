@@ -1,0 +1,98 @@
+////////////////////////////////////////////////////////////////////
+//DeRap: data\ILCS\odst_Ruck.rvmat
+//Produced from mikero's Dos Tools Dll version 9.98
+//https://mikero.bytex.digital/Downloads
+//'now' is Fri Sep 12 15:31:01 2025 : 'file' last modified on Thu Apr 10 20:51:00 2025
+////////////////////////////////////////////////////////////////////
+
+#define _ARMA_
+
+class StageTI
+{
+	texture = "#(argb,8,8,3)color(0,0,0,0)";
+};
+Ambient[] = {1,1,1,1};
+Diffuse[] = {0.5,0.5,0.5,1};
+forcedDiffuse[] = {0,0,0,0};
+emmisive[] = {0,0,0,1};
+specular[] = {0.75,0.75,0.75,1};
+specularPower = 50;
+PixelShaderID = "Super";
+VertexShaderID = "Super";
+class Stage1
+{
+	texture = "z\73STB\addons\armor\data\ILCS\ruck_nohq.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage2
+{
+	texture = "#(argb,8,8,3)color(0.5,0.5,0.5,1,DT)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage3
+{
+	texture = "#(argb,8,8,3)color(0,0,0,0,MC)";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage4
+{
+	texture = "z\73STB\addons\armor\data\ILCS\ruck_as.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage5
+{
+	texture = "z\73STB\addons\armor\data\ILCS\ruck_smdi.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};
+class Stage6
+{
+	texture = "#(ai,64,64,1)fresnel(1,0.7)";
+	uvSource = "none";
+};
+class Stage7
+{
+	texture = "a3\data_f\env_co.paa";
+	uvSource = "tex";
+	class uvTransform
+	{
+		aside[] = {1,0,0};
+		up[] = {0,1,0};
+		dir[] = {0,0,0};
+		pos[] = {0,0,0};
+	};
+};

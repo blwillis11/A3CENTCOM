@@ -1,0 +1,26 @@
+{
+    "compress": {
+        "exclude": [
+        ],
+        "include": [
+        ]
+    },
+    "headers": [
+        {
+            "name": "prefix",
+            "value": "z\\ace\\addons\\medical_engine"
+        },
+        {
+            "name": "hemtt",
+            "value": "1.16.3-local"
+        },
+        {
+            "name": "version",
+            "value": "3.20.0.104"
+        },
+        {
+            "name": "git",
+            "value": "06f6a670ce349fb3d411b49489360d1613d3198e"
+        }
+    ]
+}
