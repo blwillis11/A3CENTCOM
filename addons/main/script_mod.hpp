@@ -1,8 +1,8 @@
-#define MAINPREFIX z
-#define PREFIX STB73
+#define MAINPREFIX y
+#define PREFIX CC
 
-#define AUTHOR QUOTE(73rd S-4 Team)
-#define MOD_NAME_BEAUTIFIED QUOTE(73rd S-4 Team)
+#define AUTHOR QUOTE(CENTCOM J-4 Team)
+#define MOD_NAME_BEAUTIFIED QUOTE(CENTCOM Aux Mod)
 
 
 #include "script_version.hpp"
@@ -12,7 +12,7 @@
 #define VERSION_AR  MAJOR,MINOR,PATCHLVL,BUILD
 
 // MINIMAL required version for the Mod. Components can specify others..
-#define REQUIRED_VERSION 2.02
+#define REQUIRED_VERSION 0.5
 #define REQUIRED_CBA_VERSION {3,15,6}
 #define REQUIRED_ACE_VERSION {3,14,0,63}
 #define REQUIRED_TFAR_VERSION {1,-1,0,328}
