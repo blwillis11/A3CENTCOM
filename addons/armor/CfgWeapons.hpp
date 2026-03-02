@@ -33,8 +33,8 @@ class CfgWeapons
     class CH252_Helmet_Sealed;
 
 
-    CH252D_HELMET(TFAlpha,Green)
-    CH252D_HELMET_DP(TFAlpha,Green)
+    CH252D_HELMET(TFAlpha,Standard,Green)
+    CH252D_HELMET_DP(TFAlpha,Standard,Green)
     CH252_HELMET(TFAlpha,Standard)
     CH252_HELMET_EYEPIECE(TFAlpha,Standard)
     CH252_HELMET_VISORGLASSES(TFAlpha,Standard)

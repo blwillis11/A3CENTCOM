@@ -19,7 +19,7 @@
 */
 
 //basic path macros
-#define P(PATH) \y\A3CENTCOM\addons\CCarmor\##PATH
+#define P(PATH) \y\A3CENTCOM\addons\armor\##PATH
     //P((Something) => "\y\A3CENTCOM\addons\CCarmor\something
 
 #undef QUOTE
@@ -132,15 +132,15 @@ class HitpointsProtectionInfo {  \
 
 #define VEST_ODST(TF,CAMO) \
     class CC_M56D_ODST_Vest_##TF##_##CAMO## : M52_ODST_Vest_Base { \
-      scope=2; \
-      scopeArsenal=2; \
+      scope=1; \
+      scopeArsenal=1; \
       displayName = QUOTE([CC] M56D ODST Vest [##TF##] [##CAMO##]); \
       author=AUTHOR; \
       hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ODST_Bracer_Left","ODST_Bracer_Right","ODST_Chest","ODST_Left","ODST_Right","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","RShoulderRadio","StomachPouch","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGLeft","WaistGRight","WaistPLeft","WaistPRight","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight","LegPouchL","LegPouchR"}; \
-      hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Backpack\Attachments\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
+      hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
       class ItemInfo: VestItem { \
         hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ODST_Bracer_Left","ODST_Bracer_Right","ODST_Chest","ODST_Left","ODST_Right","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","RShoulderRadio","StomachPouch","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGLeft","WaistGRight","WaistPLeft","WaistPRight","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight","LegPouchL","LegPouchR"}; \
-        hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Backpack\Attachments\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
+        hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
         uniformModel="MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d"; \
         vestType="Rebreather";                                            \
         containerClass="Supply200";                                      \
@@ -158,6 +158,12 @@ class HitpointsProtectionInfo {  \
       hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","RShoulderRadio","StomachPouch","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGLeft","WaistGRight","WaistPLeft","WaistPRight","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight","LegPouchL","LegPouchR"}; \
       class ItemInfo: VestItem { \
         hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","RShoulderRadio","StomachPouch","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGLeft","WaistGRight","WaistPLeft","WaistPRight","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight","LegPouchL","LegPouchR"}; \
+        hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
+        uniformModel="MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d"; \
+        vestType="Rebreather";                                            \
+        containerClass="Supply200";                                      \
+        mass=20;                                                   \
+        VEST_HITPOINT_INFO  \
       }; \
     };
 
@@ -170,6 +176,12 @@ class HitpointsProtectionInfo {  \
       hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","StomachPouch","TorsoPouch","WaistBack","WaistGRight","WaistPLeft","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight","LegPouchR"}; \
       class ItemInfo: VestItem { \
         hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","StomachPouch","TorsoPouch","WaistBack","WaistGRight","WaistPLeft","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight","LegPouchR"}; \
+        hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
+        uniformModel="MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d"; \
+        vestType="Rebreather";                                            \
+        containerClass="Supply200";                                      \
+        mass=20;                                                   \
+        VEST_HITPOINT_INFO  \
       }; \
     };
 
@@ -182,6 +194,12 @@ class HitpointsProtectionInfo {  \
       hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ChestPMLeft","ChestPMRight","ChestPouch","RShoulderRadio","StomachPouch","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGLeft","WaistRLeft","WaistRRight","WaistSRight","LegPouchR"}; \
       class ItemInfo: VestItem { \
         hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ChestPMLeft","ChestPMRight","ChestPouch","RShoulderRadio","StomachPouch","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGLeft","WaistRLeft","WaistRRight","WaistSRight","LegPouchR"}; \
+        hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
+        uniformModel="MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d"; \
+        vestType="Rebreather";                                            \
+        containerClass="Supply200";                                      \
+        mass=20;                                                   \
+        VEST_HITPOINT_INFO  \
       }; \
     };
 
@@ -194,6 +212,12 @@ class HitpointsProtectionInfo {  \
       hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","WaistSLeft","WaistSRight"}; \
       class ItemInfo: VestItem { \
         hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","WaistSLeft","WaistSRight"}; \
+        hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
+        uniformModel="MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d"; \
+        vestType="Rebreather";                                            \
+        containerClass="Supply200";                                      \
+        mass=20;                                                   \
+        VEST_HITPOINT_INFO  \
       }; \
     };
 
@@ -206,6 +230,12 @@ class HitpointsProtectionInfo {  \
       hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Right","ODST_Left","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","StomachPouch","WaistGLeft","WaistGRight","WaistPLeft","WaistPRight","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight"}; \
       class ItemInfo: VestItem { \
         hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Right","ODST_Left","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","StomachPouch","WaistGLeft","WaistGRight","WaistPLeft","WaistPRight","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight"}; \
+        hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
+        uniformModel="MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d"; \
+        vestType="Rebreather";                                            \
+        containerClass="Supply200";                                      \
+        mass=20;                                                   \
+        VEST_HITPOINT_INFO  \
       }; \
     };
 
@@ -218,6 +248,12 @@ class HitpointsProtectionInfo {  \
       hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Right","Marksman_Left","Marksman_Right","ODST_Left","LShoulderRadio","RShoulderRadio","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGRight","WaistRRight","WaistSLeft"}; \
       class ItemInfo: VestItem { \
         hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Right","Marksman_Left","Marksman_Right","ODST_Left","LShoulderRadio","RShoulderRadio","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGRight","WaistRRight","WaistSLeft"}; \
+        hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
+        uniformModel="MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d"; \
+        vestType="Rebreather";                                            \
+        containerClass="Supply200";                                      \
+        mass=20;                                                   \
+        VEST_HITPOINT_INFO  \
       }; \
     };
 
@@ -230,6 +266,12 @@ class HitpointsProtectionInfo {  \
       hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ODST_Left","ODST_Right","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","RShoulderRadio","StomachPouch","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGLeft","WaistGRight","WaistPLeft","WaistPRight","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight","LegPouchL","LegPouchR"}; \
       class ItemInfo: VestItem { \
         hiddenSelections[]={"Camo1", "Camo2","Camo3","Camo4","Camo5","Camo6","Camo7","Camo8","Camo9","Camo10","Camo11","Camo12","Camo13","Camo14","Camo15","Camo16","Camo17","Camo18","Camo19","Camo20","Camo21","Camo22","Camo23","Camo24","Camo25","Camo26","Camo27","Camo28","Camo29","CQB_Left","CQB_Right","Marksman_Left","Marksman_Right","ODST_Left","ODST_Right","ChestPMLeft","ChestPMRight","ChestPouch","LShoulderRadio","RShoulderRadio","StomachPouch","TorsoPMLeft","TorsoPMRight","TorsoPouch","WaistBack","WaistGLeft","WaistGRight","WaistPLeft","WaistPRight","WaistRLeft","WaistRRight","WaistSLeft","WaistSRight","LegPouchL","LegPouchR"}; \
+        hiddenSelectionsTextures[]= {Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_CQB_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Marksman_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Vest_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\##CAMO##\CC_ODST_Shoulders_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_A_CO.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,Backpack\Backpack_Radio_ODST_co.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa)),Q(CC_TEXPATH(##TF##,ODST\Vest\CC_TrooperExtras_B_CO.paa))}; \
+        uniformModel="MA_Armor\data\Vests\M52_ODST\M52_ODST_Vest.p3d"; \
+        vestType="Rebreather";                                            \
+        containerClass="Supply200";                                      \
+        mass=20;                                                   \
+        VEST_HITPOINT_INFO  \
       }; \
     };
 
@@ -238,18 +280,18 @@ class HitpointsProtectionInfo {  \
       scope=2;\
       scopeArsenal=2;\
       author=AUTHOR; \
-      displayName=QUOTE([CC] CH252D Helmet [##TF##] [##CAMO##]);\
+      displayName=QUOTE([CC] CH252 Helmet [##TF##] [##CAMO##]);\
       hiddenSelectionsTextures[]=\
       {\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\VacSeal_CO.paa)),     \
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\FaceModule_CO.paa)), \
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\FaceModule_CO.paa)) \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\VacSeal_CO.paa)),     \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)), \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)) \
       };\
     };
 
@@ -258,18 +300,18 @@ class HitpointsProtectionInfo {  \
       scope=2;\
       scopeArsenal=2;\
       author=AUTHOR; \
-      displayName=QUOTE([CC] CH252D Helmet [Eyepiece] [##TF##] [##CAMO##]);\
+      displayName=QUOTE([CC] CH252 Helmet [Eyepiece] [##TF##] [##CAMO##]);\
       hiddenSelectionsTextures[]=\
       {\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\VacSeal_CO.paa)),     \
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\FaceModule_CO.paa)), \
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\FaceModule_CO.paa)) \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\VacSeal_CO.paa)),     \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)), \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)) \
       };\
     };
 
@@ -278,18 +320,18 @@ class HitpointsProtectionInfo {  \
       scope=2;\
       scopeArsenal=2;\
       author=AUTHOR; \
-      displayName=QUOTE([CC] CH252D Helmet [Glasses] [##TF##] [##CAMO##]);\
+      displayName=QUOTE([CC] CH252 Helmet [Glasses] [##TF##] [##CAMO##]);\
       hiddenSelectionsTextures[]=\
       {\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\VacSeal_CO.paa)),     \
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\FaceModule_CO.paa)), \
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\FaceModule_CO.paa)) \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\VacSeal_CO.paa)),     \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)), \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)) \
       };\
     };
 
@@ -298,31 +340,31 @@ class HitpointsProtectionInfo {  \
       scope=2;\
       scopeArsenal=2;\
       author=AUTHOR; \
-      displayName=QUOTE([CC] ECH252D Helmet [##TF##] [##CAMO##] [##VISOR## Visor]);\
+      displayName=QUOTE([CC] ECH252 Helmet [##TF##] [##CAMO##] [##VISOR## Visor]);\
       hiddenSelectionsTextures[]=\
       {\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_HelmetAccessories_A_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\VacSeal_CO.paa)),     \
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)), \
-          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)) \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\CC_TrooperHelmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\CC_HelmetAccessories_A_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\VacSeal_CO.paa)),     \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)), \
+          Q(CC_TEXPATH(##TF##,Marines\helmets\##CAMO##\##VISOR##_FaceModule_CO.paa)) \
       };\
     };
 
-#define CH252D_HELMET(TF,VISOR) \
-    class CC_CH252D_##TF##_##VISOR## : CH252D_Helmet { \
+#define CH252D_HELMET(TF,CAMO,VISOR) \
+    class CC_CH252D_##TF##_##CAMO##_##VISOR## : CH252D_Helmet { \
       scope=2;\
       scopeArsenal=2;\
       author=AUTHOR; \
-      displayName=QUOTE([CC] CH252D Helmet);\
+      displayName=QUOTE([CC] CH252D Helmet [##TF##] [##CAMO##] [##VISOR## Visor]);\
       hiddenSelectionsTextures[]=\
       {\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_ODST_Helmet_CO.paa)),\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_ODST_Visor_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_ODST_Helmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,ODST\helmets\Visor\##VISOR##\CC_ODST_Visor_CO.paa)),\
           "MA_Armor\data\Attachments\Balaclava\Marine_Balaclava_CO.paa"     \
       };\
       class ItemInfo: ItemInfo\
@@ -336,20 +378,20 @@ class HitpointsProtectionInfo {  \
           };\
           hiddenSelectionsTextures[]=\
           {\
-              Q(CC_TEXPATH(##TF##,ODST\helmets\CC_ODST_Helmet_CO.paa)),\
-              Q(CC_TEXPATH(##TF##,ODST\helmets\CC_ODST_Visor_CO.paa)),\
-              "MA_Armor\data\Attachments\Balaclava\Marine_Balaclava_CO.paa"\
+          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_ODST_Helmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,ODST\helmets\Visor\##VISOR##\CC_ODST_Visor_CO.paa)),\
+          "MA_Armor\data\Attachments\Balaclava\Marine_Balaclava_CO.paa"     \
           };\
       };\
     };
 
-#define CH252D_HELMET_DP(TF,VISOR) \
-    class CC_CH252D_##TF##_##VISOR##_dp : CH252D_Helmet_dp { \
-      displayName=QUOTE([CC] CH252D Helmet);\
+#define CH252D_HELMET_DP(TF,CAMO,VISOR) \
+    class CC_CH252D_##TF##_##CAMO##_##VISOR##_dp : CH252D_Helmet_dp { \
+      displayName=QUOTE([CC] CH252D Helmet [##TF##] [##CAMO##] [##VISOR## Visor]);\
       author=AUTHOR; \
       hiddenSelectionsTextures[]=\
       {\
-          Q(CC_TEXPATH(##TF##,ODST\helmets\CC_ODST_Helmet_CO.paa)),\
+          Q(CC_TEXPATH(##TF##,ODST\helmets\##CAMO##\CC_ODST_Helmet_CO.paa)),\
           Q(CC_TEXPATH(##TF##,ODST\helmets\CC_ODST_Depolarized_Visor_CA.paa)),\
           "MA_Armor\data\Attachments\Balaclava\Marine_Balaclava_CO.paa"     \
       };\
@@ -383,7 +425,7 @@ class HitpointsProtectionInfo {  \
         scopeArsenal=2; \
         class ItemInfo: UniformItem \
         { \
-          uniformClass="CC_BDU_##CAMO##_ODST"; \
+          uniformClass=Q(CC_BDU_##CAMO##_ODST); \
           containerClass="Supply150"; \
           mass=10; \
           uniformType="Neopren"; \
@@ -398,19 +440,19 @@ class HitpointsProtectionInfo {  \
         displayName = QUOTE([CC] ODST BDU [CAMO]); \
         scope=2; \
         scopeArsenal=2; \
-        UniformClass="CC_ODST_##CAMO##_BDU"; \
+        UniformClass=Q(CC_ODST_##CAMO##_BDU); \
         hiddenSelectionsTextures[]= \
         { \
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_UpperBDU_CO.paa)), \
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_LowerBDU_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_Collar_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_UpperBDU_CO.paa)), \
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_LowerBDU_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_Collar_CO.paa)),\
             Q(CC_TEXPATH(uniform,TrooperSoftpadding_CO.paa)),\
             Q(CC_TEXPATH(uniform,TrooperArmorStraps_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperUpperArmor_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperLowerArmor_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperShoulders_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperShoulders_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperShoulders_CO.paa))\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperUpperArmor_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperLowerArmor_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperShoulders_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperShoulders_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperShoulders_CO.paa))\
         };\
     };
 
@@ -423,7 +465,7 @@ class HitpointsProtectionInfo {  \
         scopeArsenal=2; \
         class ItemInfo: UniformItem \
         { \
-          uniformClass="CC_BDU_##CAMO##_ODST"; \
+          uniformClass=Q(CC_BDU_##CAMO##_ODST_NC); \
           containerClass="Supply150"; \
           mass=10; \
           uniformType="Neopren"; \
@@ -438,19 +480,19 @@ class HitpointsProtectionInfo {  \
         displayName = QUOTE([CC] ODST BDU [CAMO]); \
         scope=2; \
         scopeArsenal=2; \
-        UniformClass="CC_ODST_##CAMO##_BDU"; \
+        UniformClass=Q(CC_ODST_##CAMO##_BDU_NC); \
         hiddenSelectionsTextures[]= \
         { \
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_UpperBDU_CO.paa)), \
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_LowerBDU_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_Collar_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_UpperBDU_CO.paa)), \
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_LowerBDU_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_Collar_CO.paa)),\
             Q(CC_TEXPATH(uniform,TrooperSoftpadding_CO.paa)),\
             Q(CC_TEXPATH(uniform,TrooperArmorStraps_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperUpperArmor_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperLowerArmor_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperShoulders_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperShoulders_CO.paa)),\
-            Q(CC_TEXPATH(uniform,##CAMO##\CC_ODST_TrooperShoulders_CO.paa))\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperUpperArmor_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperLowerArmor_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperShoulders_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperShoulders_CO.paa)),\
+            Q(CC_TEXPATH(uniform,ODST\##CAMO##\CC_ODST_TrooperShoulders_CO.paa))\
         };\
     };
 
@@ -463,7 +505,7 @@ class HitpointsProtectionInfo {  \
       scopeArsenal=2; \
       class ItemInfo: UniformItem \
       { \
-        uniformClass="CC_BDU_Light_##CAMO##_Marine"; \
+        uniformClass=Q(CC_BDU_Light_##CAMO##_Marine); \
         containerClass="Supply150"; \
         mass=10; \
         uniformType="Neopren"; \
@@ -478,19 +520,19 @@ class HitpointsProtectionInfo {  \
       displayName = QUOTE([CC] Marine BDU [Light] [CAMO]); \
       scope=2; \
       scopeArsenal=2; \
-      UniformClass="CC_Marine_Light_##CAMO##_BDU"; \
+      UniformClass=Q(CC_Marine_Light_##CAMO##_BDU); \
       hiddenSelectionsTextures[]= \
       { \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperUpperBDU_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperLowerBDU_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperCollar_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperUpperBDU_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperLowerBDU_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperCollar_CO.paa)), \
           Q(CC_TEXPATH(uniform,TrooperSoftpadding_CO.paa)), \
           Q(CC_TEXPATH(uniform,TrooperArmorStraps_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperUpperArmor_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperLowerArmor_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperShoulders_CO.paa)) \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperUpperArmor_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperLowerArmor_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperShoulders_CO.paa)) \
       }; \
     }; 
 
@@ -503,7 +545,7 @@ class HitpointsProtectionInfo {  \
       scopeArsenal=2; \
       class ItemInfo: UniformItem \
       { \
-        uniformClass="CC_BDU_Medium_##CAMO##_Marine"; \
+        uniformClass=Q(CC_BDU_Medium_##CAMO##_Marine); \
         containerClass="Supply150"; \
         mass=10; \
         uniformType="Neopren"; \
@@ -518,19 +560,19 @@ class HitpointsProtectionInfo {  \
       displayName = QUOTE([CC] Marine BDU [Medium] [CAMO]); \
       scope=2; \
       scopeArsenal=2; \
-      UniformClass="CC_Marine_Medium_##CAMO##_BDU"; \
+      UniformClass=Q(CC_Marine_Medium_##CAMO##_BDU); \
       hiddenSelectionsTextures[]= \
       { \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperUpperBDU_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperLowerBDU_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperCollar_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperUpperBDU_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperLowerBDU_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperCollar_CO.paa)), \
           Q(CC_TEXPATH(uniform,TrooperSoftpadding_CO.paa)), \
           Q(CC_TEXPATH(uniform,TrooperArmorStraps_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperUpperArmor_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperLowerArmor_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperShoulders_CO.paa)) \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperUpperArmor_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperLowerArmor_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperShoulders_CO.paa)) \
       }; \
     };
 
@@ -543,7 +585,7 @@ class HitpointsProtectionInfo {  \
       scopeArsenal=2; \
       class ItemInfo: UniformItem \
       { \
-        uniformClass="CC_BDU_Heavy_##CAMO##_Marine"; \
+        uniformClass=Q(CC_BDU_Heavy_##CAMO##_Marine); \
         containerClass="Supply150"; \
         mass=10; \
         uniformType="Neopren"; \
@@ -558,18 +600,18 @@ class HitpointsProtectionInfo {  \
       displayName = QUOTE([CC] Marine BDU [Heavy] [CAMO]); \
       scope=2; \
       scopeArsenal=2; \
-      UniformClass="CC_Marine_Heavy_##CAMO##_BDU"; \
+      UniformClass=Q(CC_Marine_Heavy_##CAMO##_BDU); \
       hiddenSelectionsTextures[]= \
       { \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperUpperBDU_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperLowerBDU_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperCollar_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperUpperBDU_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperLowerBDU_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperCollar_CO.paa)), \
           Q(CC_TEXPATH(uniform,TrooperSoftpadding_CO.paa)), \
           Q(CC_TEXPATH(uniform,TrooperArmorStraps_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperUpperArmor_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperLowerArmor_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
-          Q(CC_TEXPATH(uniform,##CAMO##\CC_Base_TrooperShoulders_CO.paa)) \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperUpperArmor_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperLowerArmor_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperShoulders_CO.paa)), \
+          Q(CC_TEXPATH(uniform,Marine\##CAMO##\CC_Base_TrooperShoulders_CO.paa)) \
       }; \
     };

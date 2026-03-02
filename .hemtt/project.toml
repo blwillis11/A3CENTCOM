@@ -1,7 +1,7 @@
-name = "73rd STB Mod V2"
-author = "73rd S-4 Team"
-prefix = "73STB"
-mainprefix = "z"
+name = "CENTCOM Aux Mod"
+author = "CENTCOM J-4 Team"
+prefix = "CC"
+mainprefix = "y"
 
 include = [
     "mod.cpp",
@@ -11,7 +11,7 @@ include = [
 ]
 
 [properties]
-author = "73rd S-4 Team"
+author = "CENTCOM J-4 Team"
 
 [version]
 path = "addons/main/script_version.hpp"
