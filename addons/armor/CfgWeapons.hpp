@@ -25,6 +25,15 @@ class CfgWeapons
     VEST_ODST_CQB(TFAlpha,Standard)
     VEST_ODST_L(TFAlpha,Standard)
 
+    class Marine_Pouches_Base;
+
+    VEST_MAR_Base
+    VEST_MAR_Var0
+    VEST_MAR_Var1
+    VEST_MAR_Var2
+    VEST_MAR_Var3
+    VEST_MAR_Var4
+
     class CH252D_Helmet;
     class CH252D_Helmet_dp;
     class CH252_Helmet_Standard;
