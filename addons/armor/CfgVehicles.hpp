@@ -1,16 +1,22 @@
 class CfgVehicles
 {
-    class MA_Marine_ODST_BDU_HJ;
-    class MA_Marine_ODST_BDU_HJ_NC;
-    class MA_Marine_Light_BDU;
-    class MA_Marine_Medium_BDU;
-    class MA_Marine_Heavy_BDU;
-    
-    ODST_BDU_VEH(Urban)
-    ODST_BDU_NC_VEH(Urban)
-    MAR_BDU_LIGHT_VEH(Standard)
-    MAR_BDU_MEDIUM_VEH(Standard)
-    MAR_BDU_HEAVY_VEH(Standard)
+    class ContainerSupply;
+    class CC_vest_supply: ContainerSupply
+    {
+        maximumLoad = VEST_MAXLOAD;
+    };
+    TCP_VEH_CLASS_DEF
+    VEH_UNI_CLASS(urban)
+    VEH_UNI_CLASS(woodland)
+    VEH_UNI_CLASS(arctic)
+    VEH_UNI_CLASS(arid)
+    VEH_UNI_CLASS(tropic)
+    VEH_UNI_CLASS(black)
+    VEH_UNI_CLASS(grey)
+    VEH_UNI_CLASS(green)
+    VEH_UNI_CLASS(olive)
+    VEH_UNI_CLASS(tan)
+    VEH_UNI_CLASS(white)
 	
 
     class OPTRE_ILCS_Rucksack_Black;

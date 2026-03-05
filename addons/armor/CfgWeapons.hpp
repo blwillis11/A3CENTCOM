@@ -3,59 +3,79 @@ class CfgWeapons
     class VestItem;
     class ItemInfo;
     class UniformItem;
-    class MA_Marine_BDU_ODST_HJ;
-    class MA_Marine_BDU_ODST_HJ_NC;
-    class MA_Marine_BDU_Light;
-    class MA_Marine_BDU_Medium;
-    class MA_Marine_BDU_Heavy;
-    class M52_ODST_Vest_Base;
+    class TCP_V_M43D_ODST_4_Black;
+    class TCP_V_M43D_Breacher_4_Black;
+    class TCP_V_M43D_Sharpshooter_4_Black;
+    class TCP_V_M43D_Light_Black;
+    VEST_BASE
+    
+    NEW_VEST_M43A_Light(Black,TFAlpha)
+    NEW_VEST_M43A_BaseSec(Black,TFAlpha)
+    NEW_VEST_M43A_GungnirL(Black,TFAlpha)
+    NEW_VEST_M43A_GungnirS(Black,TFAlpha)
 
-    ODST_BDU_WEP(Urban)
-    ODST_BDU_NC_WEP(Urban)
-    MAR_BDU_LIGHT_WEP(Standard)
-    MAR_BDU_MEDIUM_WEP(Standard)
-    MAR_BDU_HEAVY_WEP(Standard)
+    NEW_VEST_M43A_Light(Brown,TFAlpha)
+    NEW_VEST_M43A_BaseSec(Brown,TFAlpha)
+    NEW_VEST_M43A_GungnirL(Brown,TFAlpha)
+    NEW_VEST_M43A_GungnirS(Brown,TFAlpha)
 
-    VEST_ODST(TFAlpha,Standard)
-    VEST_ODST_A(TFAlpha,Standard)
-    VEST_ODST_B(TFAlpha,Standard)
-    VEST_ODST_C(TFAlpha,Standard)
-    VEST_ODST_D(TFAlpha,Standard)
-    VEST_ODST_M(TFAlpha,Standard)
-    VEST_ODST_CQB(TFAlpha,Standard)
-    VEST_ODST_L(TFAlpha,Standard)
+    NEW_VEST_M43A_Light(Green,TFAlpha)
+    NEW_VEST_M43A_BaseSec(Green,TFAlpha)
+    NEW_VEST_M43A_GungnirL(Green,TFAlpha)
+    NEW_VEST_M43A_GungnirS(Green,TFAlpha)
 
-    class Marine_Pouches_Base;
+    NEW_VEST_M43A_Light(Olive,TFAlpha)
+    NEW_VEST_M43A_BaseSec(Olive,TFAlpha)
+    NEW_VEST_M43A_GungnirL(Olive,TFAlpha)
+    NEW_VEST_M43A_GungnirS(Olive,TFAlpha)
 
-    VEST_MAR_Base
-    VEST_MAR_Var0
-    VEST_MAR_Var1
-    VEST_MAR_Var2
-    VEST_MAR_Var3
-    VEST_MAR_Var4
+    NEW_VEST_M43A_Light(Tan,TFAlpha)
+    NEW_VEST_M43A_BaseSec(Tan,TFAlpha)
+    NEW_VEST_M43A_GungnirL(Tan,TFAlpha)
+    NEW_VEST_M43A_GungnirS(Tan,TFAlpha)
 
-    class CH252D_Helmet;
-    class CH252D_Helmet_dp;
-    class CH252_Helmet_Standard;
-    class CH252_Helmet_EyePiece;
-    class CH252_Helmet_VisorGlasses;
-    class CH252_Helmet_Sealed;
+    NEW_VEST_M43A_Light(White,TFAlpha)
+    NEW_VEST_M43A_BaseSec(White,TFAlpha)
+    NEW_VEST_M43A_GungnirL(White,TFAlpha)
+    NEW_VEST_M43A_GungnirS(White,TFAlpha)
+
+    NEW_VEST_M43D_ODST(Black,TFAlpha)
+    NEW_VEST_M43D_Breacher(Black,TFAlpha)
+    NEW_VEST_M43D_Sharpshooter(Black,TFAlpha)
+    NEW_VEST_M43D_Light(Black,TFAlpha)
+
+    TCP_WEP_CLASS_DEF
+    WEP_UNI_CLASS(Urban)
+    WEP_UNI_CLASS(Woodland)
+    WEP_UNI_CLASS(Arctic)
+    WEP_UNI_CLASS(Arid)
+    WEP_UNI_CLASS(Tropic)
+    WEP_UNI_CLASS(Black)
+    WEP_UNI_CLASS(Grey)
+    WEP_UNI_CLASS(Green)
+    WEP_UNI_CLASS(Olive)
+    WEP_UNI_CLASS(Tan)
+    WEP_UNI_CLASS(White)
 
 
-    CH252D_HELMET(TFAlpha,Standard,Green)
-    CH252D_HELMET_DP(TFAlpha,Standard,Green)
-    CH252_HELMET(TFAlpha,Standard)
-    CH252_HELMET_EYEPIECE(TFAlpha,Standard)
-    CH252_HELMET_VISORGLASSES(TFAlpha,Standard)
-    ECH252_HELMET(TFAlpha,Standard,Green)
+    class TCP_H_Helmet_ECH55D_Black_Black;
+    class TCP_H_Helmet_ECH55D_Black_Black_DP;
+    class TCP_H_Helmet_ECH35J_Black_Black;
+    class TCP_H_Helmet_ECH35J_Black_Black_DP;
+    class TCP_H_Helmet_ECH43A_Black_Black;
+    class TCP_H_Helmet_ECH43A_Black_Black_DP;
+    class TCP_H_Helmet_CH43A_Black;
+    class HeadgearItem;
 
-
-
+    HELMET_ECH55D(TFAlpha)
+    HELMET_CH43A(TFAlpha)
+    HELMET_ECH43A(TFAlpha)
+    HELMET_ECH35J(TFAlpha)
 
 
     class OPTRE_FC_VX19_Helmet;
 
-    class STB73_VX19_Helmet_Base: OPTRE_FC_VX19_Helmet
+    class CC_VX19_Helmet_Base: OPTRE_FC_VX19_Helmet
     {
         scope=2;
         scopeArsenal=2;
