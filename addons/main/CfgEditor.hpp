@@ -1,6 +1,6 @@
 class cfgFactionClasses 
 { 
-    class CC_STB
+    class CC_Assets
     { 
         displayName = "[CC] Centcom Assets";
         priority = 0; // Position in list.
@@ -24,7 +24,7 @@ class cfgFactionClasses
 };
 class CfgEditorCategories
 {
-	class CC_STB
+	class CC_Assets
     { 
         displayName = "[CC] Centcom Assets";
         scopeCurator=2;
@@ -75,13 +75,13 @@ class CfgEditorSubcategories
     {
         displayName = "Planes";
     };
-    class CC_Mechanized_EdSubCat
-    {
-        displayName = "Mechanized";
-    };
     class CC_STB_EdSubCat
     {
-        displayName = "Troopers [Batt]";
+        displayName = "ODST Troopers";
+    };
+    class CC_Mar_EdSubCat
+    {
+        displayName = "Marines";
     };
     class CC_Infantry_EdSubCat
     {
@@ -98,15 +98,6 @@ class CfgEditorSubcategories
     class CC_Artillery_EdSubCat
     {
         displayName = "Artillery";
-    };
-	class supply_pods // Category class, you point to it in editorSubcategory property
-	{
-		displayName = "Supply Pods"; // Name visible in the list
-	};
-    class CC_Misc_EdSubCat
-    {
-        displayName = "Miscellaneous";
-        vehicleClass = "CC_Objects";
     };
 	class CC_Utility_EdSubCat // Category class, you point to it in editorSubcategory property
 	{

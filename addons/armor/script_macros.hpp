@@ -587,7 +587,7 @@ class HitpointsProtectionInfo {  \
   };
 
 #define CH43A_HELMET(TF,CAMO) \
-    class CC_H_CH43A_##CAMO## : TCP_H_Helmet_CH43A_Black { \
+    class CC_H_CH43A_##TF##_##CAMO## : TCP_H_Helmet_CH43A_Black { \
       displayName = QUOTE([CC] CH43A Helmet [##CAMO##]); \
       ace_hearing_protection = 0.80; \
       scope=2; \
@@ -605,7 +605,7 @@ class HitpointsProtectionInfo {  \
         Q(CC_TEXPATH(##TF##,##CAMO##\vest_M43_DecalSheet_CA.paa))\
       };\
       HELMET_ITEM_CH43A_INFO \
-    }; \
+    }; 
 
 #define HELMET_CH43A(TF) \
   CH43A_HELMET(##TF##,Black) \

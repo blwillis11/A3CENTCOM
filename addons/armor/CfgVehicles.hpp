@@ -20,10 +20,10 @@ class CfgVehicles
 	
 
     class OPTRE_ILCS_Rucksack_Black;
-    class STB73_Rucksack: OPTRE_ILCS_Rucksack_Black
+    class CC_ILCS: OPTRE_ILCS_Rucksack_Black
     {
-        author="73rd S-4 Team";
-        displayName = "[73] ODST Rucksack";
+        author=AUTHOR;
+        displayName = "[CC] ODST Rucksack";
         scope= 2;
         scopeArsenal=2;
         hidenSelectionsMaterials[]=
@@ -31,24 +31,40 @@ class CfgVehicles
             Q(CC_TEXPATH(backpack,odst_Ruck.rvmat))
         };
     };
-    class OPTRE_ILCS_Rucksack_Medical;
-    class STB73_Rucksack_med: OPTRE_ILCS_Rucksack_Medical
+    class OPTRE_UNSC_Rucksack;
+    class CC_UNSC_Rucksack: OPTRE_UNSC_Rucksack
     {
-        author="73rd S-4 Team";
-        displayName = "[73] ODST Rucksack [Medic]";
+        author=AUTHOR;
+        displayName = "[CC] UNSC Rucksack";
+        scope= 2;
+        scopeArsenal=2;
+    };
+    class OPTRE_ILCS_Rucksack_Medical;
+    class CC_ILCS_med: OPTRE_ILCS_Rucksack_Medical
+    {
+        author=AUTHOR;
+        displayName = "[CC] ODST Rucksack [Medic]";
         scope= 2;
         scopeArsenal=2;
         hidenSelectionsMaterials[]=
         {
             Q(CC_TEXPATH(backpack,odst_Ruck.rvmat))
         };
+    };
+    class OPTRE_UNSC_Rucksack_Medical;
+    class CC_UNSC_Rucksack_med: OPTRE_UNSC_Rucksack_Medical
+    {
+        author=AUTHOR;
+        displayName = "[CC] UNSC Rucksack [Medic]";
+        scope= 2;
+        scopeArsenal=2;
     };
     
     class OPTRE_ILCS_Rucksack_Heavy;
-    class STB73_Rucksack_hev: OPTRE_ILCS_Rucksack_Heavy
+    class CC_ILCS_hev: OPTRE_ILCS_Rucksack_Heavy
     {
-        author="73rd S-4 Team";
-        displayName = "[73] ODST Rucksack [Heavy]";
+        author=AUTHOR;
+        displayName = "[CC] ODST Rucksack [Heavy]";
         scope= 2;
         scopeArsenal=2;
         hidenSelectionsMaterials[]=
@@ -56,11 +72,33 @@ class CfgVehicles
             Q(CC_TEXPATH(backpack,odst_Ruck.rvmat))
         };
     };
-
-    class STB73_Rucksack_rto: STB73_Rucksack
+    class OPTRE_UNSC_Rucksack_Heavy;
+    class CC_UNSC_Rucksack_hev: OPTRE_UNSC_Rucksack_Heavy
     {
-        displayName = "[73] ODST Rucksack [RTO]";
-        author="73rd S-4 Team";
+        author=AUTHOR;
+        displayName = "[CC] UNSC Rucksack [Heavy]";
+        scope= 2;
+        scopeArsenal=2;
+    };
+
+    class CC_ILCS_rto: CC_ILCS
+    {
+        displayName = "[CC] ODST Rucksack [RTO]";
+        author=AUTHOR;
+        scope=2;
+        scopeArsenal=2;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="rt1523g_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=25000;
+        tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+    };
+    class OPTRE_ANPRC_515;
+    class CC_ANPRC_rto: OPTRE_ANPRC_515
+    {
+        displayName = "[CC] AN/PRC-515";
+        author=AUTHOR;
         scope=2;
         scopeArsenal=2;
         tf_encryptionCode="tf_west_radio_code";
@@ -71,9 +109,9 @@ class CfgVehicles
         tf_hasLRradio=1;
     };
     //*****************************************************************************************************************************\\	
-    class STB73_Rucksack_invis: STB73_Rucksack
+    class CC_ILCS_invis: CC_ILCS
     {
-        displayName = "[73] No Backpack";
+        displayName = "[CC] No Backpack";
         model = "\A3\weapons_f\empty";
         scope= 2;
         scopeArsenal=2;
@@ -84,9 +122,9 @@ class CfgVehicles
             ""
         };
     };
-    class STB73_Rucksack_invis_rto: STB73_Rucksack_invis
+    class CC_ILCS_invis_rto: CC_ILCS_invis
     {
-        displayName = "[73] Zeus Backpack (RTO)";
+        displayName = "[CC] Zeus Backpack (RTO)";
         tf_encryptionCode="tf_west_radio_code";
         tf_dialog="rt1523g_radio_dialog";
         tf_subtype="digital_lr";
