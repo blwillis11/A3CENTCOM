@@ -7,17 +7,18 @@ class CfgPatches
         weapons[]=
         {
             //BRs
-
+            "",
             //Long Rifles
-
+            "",
+            "",
             //Rifles
-
+            "",
             //SMGs
-
+            "",
             //Pistols
-
+            "CC_Pistol_M6G",
             //Machine Guns
-
+            "CC_LMG_M731"
             //
 
 
@@ -59,8 +60,6 @@ class CfgWeapons
     #include "weapons\Rifles.hpp"
     #include "weapons\SMGs.hpp"
     #include "weapons\UGLs.hpp"
-    // CC Optics
-    #include "cfg\Optics.hpp"
 };
 
 class CfgAmmo

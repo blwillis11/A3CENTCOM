@@ -5,7 +5,6 @@ class CC_Pistol_M6G: TCP_hgun_Pistol_M6G
     author="CENTCOM J-4";
     displayName="M6G";
     baseWeapon="CC_Pistol_M6G";
-    initSpeed=-0.94545454;
     magazines[]=
     {
         ""
