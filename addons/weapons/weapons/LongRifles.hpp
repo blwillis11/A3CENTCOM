@@ -3,7 +3,7 @@ class TCP_srifle_M392;
 class CC_M392 : TCP_srifle_M392
 {
      author= AUTHOR;
-     displayName="M392";
+     displayName="[CENTCOM] M392";
      baseWeapon="CC_M392";
      magazines[]=
      {
