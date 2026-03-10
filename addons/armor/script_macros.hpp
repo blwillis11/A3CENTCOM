@@ -75,49 +75,34 @@ hiddenSelectionsTextures[]=
 // Macro for the hitpoint data applied to vests
 #define VEST_HITPOINT_INFO       \
 class HitpointsProtectionInfo {  \
-  class Neck {                   \
-    hitpointName="HitNeck";      \
-    armor=20;                    \
-    passThrough=0.3;             \
-  };                             \
   class Arms {                   \
     hitpointName="HitArms";      \
-    armor=25;                    \
-    passThrough=0.2;             \
+    armor=18;                    \
+    passThrough=0.3;             \
   };                             \
   class Chest {                  \
     hitpointName="HitChest";     \
-    armor=35;                    \
-    passThrough=0.1;             \
+    armor=26;                    \
+    passThrough=0.3;             \
   };                             \
   class Diaphragm {              \
     hitpointName="HitDiaphragm"; \
-    armor=30;                    \
-    passThrough=0.2;             \
+    armor=26;                    \
+    passThrough=0.3;             \
   };                             \
   class Abdomen {                \
     hitpointName="HitAbdomen";   \
-    armor=30;                    \
-    passThrough=0.2;             \
+    armor=26;                    \
+    passThrough=0.3;             \
   };                             \
   class Body {                   \
     hitpointName="HitBody";      \
-    passThrough=0.2;             \
+    passThrough=0.3;             \
   };                             \
   class Legs {                   \
     hitpointName="HitLegs";      \
-    armor=20;                    \
-    passThrough=0.4;             \
-  };                             \
-  class Hands {                  \
-    hitpointName="HitHands";     \
-    armor=20;                    \
-    passThrough=0.05;             \
-  };                             \
-  class Pelvis {                 \
-    hitpointName="HitPelvis";    \
-    armor=30;                    \
-    passThrough=0.2;             \
+    armor=26;                    \
+    passThrough=0.3;             \
   };                             \
 };
 
@@ -309,7 +294,7 @@ class HitpointsProtectionInfo {  \
     };\
     class XtdGearInfo { \
       Model="CC_ACE_M43D_Vest"; \
-      TF=Q(##TF##); \
+      TaskForce=Q(##TF##); \
       Camo=Q(##CAMO##); \
       Variant=Q(ODST);\
     }; \
@@ -332,7 +317,7 @@ class HitpointsProtectionInfo {  \
     };\
     class XtdGearInfo { \
       Model="CC_ACE_M43D_Vest"; \
-      TF=Q(##TF##); \
+      TaskForce=Q(##TF##); \
       Camo=Q(##CAMO##); \
       Variant=Q(Breacher);\
     }; \
@@ -355,7 +340,7 @@ class HitpointsProtectionInfo {  \
     };\
     class XtdGearInfo { \
       Model="CC_ACE_M43D_Vest"; \
-      TF=Q(##TF##); \
+      TaskForce=Q(##TF##); \
       Camo=Q(##CAMO##); \
       Variant=Q(Sharpshooter);\
     }; \
@@ -472,7 +457,7 @@ class HitpointsProtectionInfo {  \
       }; \
       class XtdGearInfo { \
         Model="CC_ACE_M43D_Vest"; \
-        TF=Q(##TF##); \
+        TaskForce=Q(##TF##); \
         Camo=Q(##CAMO##); \
         Variant=Q(Light); \
       };   \
@@ -486,13 +471,13 @@ class HitpointsProtectionInfo {  \
           class Face\
           {\
             hitpointName="HitFace"; \
-            armor=15;\
+            armor=12;\
             passThrough=0.5;\
           };\
           class Head\
           {\
             hitpointName="HitHead";\
-            armor=20;\
+            armor=18;\
             passThrough=0.5;\
           };\
         };
@@ -503,7 +488,7 @@ class HitpointsProtectionInfo {  \
           class Head\
           {\
             hitpointName="HitHead";\
-            armor=20;\
+            armor=18;\
             passThrough=0.5;\
           };\
         };
@@ -547,7 +532,7 @@ class HitpointsProtectionInfo {  \
       };\
       HELMET_ITEM_ECH55D_INFO \
     }; \
-    class CC_H_ECH55D_##TF##_##CAMO##_##VISOR##_DP : CC_H_ECH55D_##TF##_##CAMO##_##VISOR## { \
+    class CC_H_ECH55D_##TF##_##CAMO##_##VISOR##_DP : TCP_H_Helmet_ECH55D_DP_Base { \
         displayName = QUOTE([CC] ECH55D Helmet [##TF##] [##CAMO##] [##VISOR##] [DP]); \
         ace_hearing_protection = 0.80; \
         scope=1; \
@@ -749,7 +734,7 @@ class HitpointsProtectionInfo {  \
       ace_hearing_protection = 0.80; \
       class XtdGearInfo { \
         Model="CC_ACE_ECH35J_Helmet"; \
-        TF =Q(##TF##); \
+        TaskForce =Q(##TF##); \
         Camo=Q(##CAMO##); \
         Visor=Q(##VISOR##); \
       };   \

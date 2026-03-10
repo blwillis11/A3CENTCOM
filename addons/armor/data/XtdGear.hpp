@@ -8,16 +8,16 @@ class XtdGearModels
             author = AUTHOR;
             options[]=
             {
-                "TF",
+                "TaskForce",
                 "Camo",
                 "Variant"
             };
-            class TF
+            class TaskForce
             {
                 alwaysSelectable=1;
                 changeingame=0;
                 changedelay=0;
-                label= "TF";
+                label= "TaskForce";
                 values[]=
                 {
                     "TFAlpha",
@@ -109,16 +109,16 @@ class XtdGearModels
             author = AUTHOR;
             options[]=
             {
-                "TF",
+                "TaskForce",
                 "Camo",
                 "Visor"
             };
-            class TF
+            class TaskForce
             {
                 alwaysSelectable=1;
                 changeingame=0;
                 changedelay=0;
-                label= "TF";
+                label= "TaskForce";
                 values[]=
                 {
                     "TFAlpha",
@@ -162,17 +162,17 @@ class XtdGearModels
             author = AUTHOR;
             options[]=
             {
-                "TF",
+                "TaskForce",
                 "Camo",
                 "Enclosed",
                 "Visor"
             };
-            class TF
+            class TaskForce
             {
                 alwaysSelectable=1;
                 changeingame=0;
                 changedelay=0;
-                label= "TF";
+                label= "TaskForce";
                 values[]=
                 {
                     "TFAlpha",
@@ -231,16 +231,16 @@ class XtdGearModels
             author = AUTHOR;
             options[]=
             {
-                "TF",
+                "TaskForce",
                 "Camo",
                 "Visor"
             };
-            class TF
+            class TaskForce
             {
                 alwaysSelectable=1;
                 changeingame=0;
                 changedelay=0;
-                label= "TF";
+                label= "TaskForce";
                 values[]=
                 {
                     "TFAlpha",
@@ -392,28 +392,6 @@ class XtdGearModels
                 };
             };
         };
-
-        class CC_ACE_VX19_Helmet
-		{
-		    label="[CC] VX19 Flight Helmet";
-			author="CCrd S-4 Team";
-			options[] =
-			{
-				"Roles"
-			};
-			class Roles
-			{
-				alwaysSelectable=1;
-				changeingame=0;
-				changedelay=0;
-                label= "Roles";
-		        values[]=
-		        {
-		            "Aviator",
-		            "Sr Aviator"
-		        };
-		    };
-		};
 
         // Uniforms
         class CC_new_uniforms {

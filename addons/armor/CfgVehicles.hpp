@@ -51,8 +51,8 @@ class CfgVehicles
             Q(CC_TEXPATH(backpack,odst_Ruck.rvmat))
         };
     };
-    class OPTRE_UNSC_Rucksack_Medical;
-    class CC_UNSC_Rucksack_med: OPTRE_UNSC_Rucksack_Medical
+    class OPTRE_UNSC_Rucksack_Medic;
+    class CC_UNSC_Rucksack_med: OPTRE_UNSC_Rucksack_Medic
     {
         author=AUTHOR;
         displayName = "[CC] UNSC Rucksack [Medic]";

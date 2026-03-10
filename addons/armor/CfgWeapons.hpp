@@ -93,6 +93,7 @@ class CfgWeapons
     class TCP_H_Helmet_ECH43A_Black_Black;
     class TCP_H_Helmet_ECH43A_Black_Black_DP;
     class TCP_H_Helmet_CH43A_Black;
+    class TCP_H_Helmet_ECH55D_DP_Base;
     class HeadgearItem;
 
     HELMET_ECH55D(TFAlpha)

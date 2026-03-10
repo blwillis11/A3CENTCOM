@@ -26,7 +26,7 @@ class CC_M875:VES_M875_SPH
         class CC_GroundSpawner
         {
             scope = 1;
-            spawner= "CCrd Mechanized";
+            spawner= "CC Mechanized";
             vehicle = "Scorpion";
             Type = "SPH";
             cost = 5;

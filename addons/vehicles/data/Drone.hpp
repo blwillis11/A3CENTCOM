@@ -271,7 +271,7 @@ class CC_POGV_RCWS: B_UGV_01_rcws_F
         class CC_GroundSpawner
         {
             scope = 1;
-            spawner= "73rd Mechanized";
+            spawner= "CENTCOM Mechanized";
             vehicle = "Drone";
             Type = "POG-V";
             cost = 1;
@@ -567,7 +567,7 @@ class CC_COGV_RCWS: CC_POGV_RCWS
         class CC_GroundSpawner
         {
             scope = 1;
-            spawner= "73rd Mechanized";
+            spawner= "CENTCOM Mechanized";
             vehicle = "Drone";
             Type = "COG-V";
             cost = 1;
