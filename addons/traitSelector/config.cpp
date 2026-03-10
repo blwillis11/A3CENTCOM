@@ -147,7 +147,7 @@ class CC_TraitSelector_Main_UI
 			align="CENTER";
 			style=2;
 			valign="top";
-			text="Select your Company";
+			text="CENTCOM Trait Selector";
 			x="0.209806 * safezoneW + safezoneX";
 			y="0.21202 * safezoneH + safezoneY";
 			w="0.582656 * safezoneW";

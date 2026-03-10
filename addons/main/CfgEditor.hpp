@@ -53,7 +53,7 @@ class CfgEditorSubcategories
     class CC_Crates
     {
         displayName = "Crates";
-        vehicleClass = "CC_Objects";
+        vehicleClass = "CC_Assets";
     };
     class CC_Cars_EdSubCat
     {
@@ -106,5 +106,19 @@ class CfgEditorSubcategories
     class CC_SpecOps_EdSubCat
     {
         displayName = "Special Forces";
+    };
+    class CC_SupplyPods_EdSubCat
+    {
+        displayName = "Supply Pods";
+    };
+    class CC_Misc_EdSubCat
+    {
+        displayName = "Miscellaneous";
+        vehicleClass = "CC_Assets";
+    };
+    class CC_Crates_EdSubCat
+    {
+        displayName = "Crates";
+        vehicleClass = "CC_Assets";
     };
 };
