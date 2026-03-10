@@ -1,6 +1,6 @@
-class v105_TraitSelector_Logs_UI
+class CC_TraitSelector_Logs_UI
 {
-	name = "v105_TraitSelector_Logs_UI";
+	name = "CC_TraitSelector_Logs_UI";
 	idd = 1234;
 	movingEnable = false;
     class ControlsBackground 

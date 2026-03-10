@@ -1,6 +1,6 @@
-class v105_TraitSelector_Main_UI
+class CC_TraitSelector_Main_UI
 {
-	name = "v105_TraitSelector_Main_UI";
+	name = "CC_TraitSelector_Main_UI";
 	idd = 1234;
 	movingEnable = false;
     class ControlsBackground 
@@ -32,7 +32,7 @@ class v105_TraitSelector_Main_UI
 	
 	class Controls
 	{
-		class RscActivePictureV105_TraitsButton: RscActivePictureV105
+		class RscActivePictureCC_TraitsButton: RscActivePictureCC
 		{
 			idc = 2201;
         	text = "\y\A3CENTCOM\addons\traitSelector\Textures\Buttons\CCButton.paa";
