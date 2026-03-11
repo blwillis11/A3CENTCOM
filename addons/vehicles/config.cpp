@@ -27,7 +27,6 @@ class CfgPatches {
             "CC_AV22C_Sparrowhawk",
             "CC_M413_MGS",//Load/unload
             "CC_M412_IFV",//Load/unload
-            "CC_F29_Nandao_VTOL",
             "CC_YSS_1000_A_VTOL_Single",
             "CC_Shortsword_01_F",
             "CC_JT_RM2_Longsword_dynamicLoadout_F",
@@ -40,15 +39,16 @@ class CfgPatches {
             "CC_SDV_ODST",
             "CC_M274_ATV",
             "CC_M808BMk2",//Load/unload
-            "CC_M914_TD",//Load/unload
             "CC_Hammerhead_Repair",//Load/unload
             "CC_POGV_RCWS",
             "CC_COGV_RCWS",
             "CC_Iguana_APC",//Load/unload
             "CC_Iguana_Medical_APC",//Load/unload
             "CC_Komodo",//Load/unload
-            "CC_Merkava",//Load/unload
-            "CC_cart"
+            "CC_cart",
+            "CC_D77H_SOCOM_Pelican",
+            "CC_AV18_Dragonfly",
+            "CC_AV18S_Dragonfly"
         }; 
         weapons[] = {
         };

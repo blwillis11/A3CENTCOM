@@ -238,6 +238,40 @@ class CC_D77_TC_Pelican: Splits_UNSC_D77_TC_Pelican
         #include "cfg\PelicanActions.hpp"
     };
 };
+class OPTRE_Pelican_armed_SOCOM;
+class CC_D77H_SOCOM_Pelican: OPTRE_Pelican_armed_SOCOM
+{
+    displayName = "[CC] D77H-TCI/AV SOCOM Pelican";
+    editorCategory = "CC_Assets";
+    editorSubcategory = "CC_Helicopters_EdSubCat";
+    scopeCurator=2;
+    scope=2;
+    side=1;
+    crew = "CC_Assets_Aviator";
+    class EventHandlers: EventHandlers
+    {
+        class CC_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,true,false] call CC_fnc_RegisterThrusters;";
+        };
+    };
+    class textureSources
+    {};
+    class VehicleSpawnerInfo {
+        class CC_AirSpawner
+        {
+            scope = 1;
+            spawner= "CENTCOM Aviation";
+            vehicle = "Pelican";
+            Type = "SOCOM";
+            cost = 3;
+        };
+    };
+    class UserActions
+    {
+        #include "cfg\PelicanActions.hpp"
+    };
+};
 
 class OPTRE_UNSC_falcon;
 
@@ -533,11 +567,11 @@ class CC_AV22C_Sparrowhawk:OPTRE_AV22C_Sparrowhawk
     };
 };
 
-class TKE_Ext_Dragonfly_A;
+class TKE_Ext_Dragonfly_A_UNSC;
 
-class CC_AV18_Dragonfly:TKE_Ext_Dragonfly_A
+class CC_AV18_Dragonfly:TKE_Ext_Dragonfly_A_UNSC
 {
-    displayName = "[CC] AV-18 Dragonfly";
+    displayName = "[CC] AV-18/A Dragonfly";
     author= AUTHOR;
     editorCategory = "CC_Assets";
     editorSubcategory = "CC_Helicopters_EdSubCat";
@@ -563,7 +597,43 @@ class CC_AV18_Dragonfly:TKE_Ext_Dragonfly_A
             scope = 1;
             spawner= "CENTCOM Aviation";
             vehicle = "Dragonfly";
-            Type = "AV-18";
+            Type = "AV-18/A";
+            cost = 2;
+            priority = 2;
+        };
+    };
+};
+class TKE_Ext_Dragonfly_S_UNSC;
+
+class CC_AV18S_Dragonfly:TKE_Ext_Dragonfly_S_UNSC
+{
+    displayName = "[CC] AV-18/S Dragonfly";
+    author= AUTHOR;
+    editorCategory = "CC_Assets";
+    editorSubcategory = "CC_Helicopters_EdSubCat";
+    scopeCurator=2;
+    scope=2;
+    side=1;
+    class EventHandlers: EventHandlers
+    {
+        class CC_RegisterThrusters_EH
+        {
+            init = "[(_this select 0),true,false] call STBCC_fnc_RegisterThrusters;";
+        };
+    };
+    crew = "CC_Assets_Aviator";
+    class UserActions
+    {
+        #include "cfg\UtilityActions.hpp"
+        #include "cfg\ThrusterActions.hpp"
+    };
+    class VehicleSpawnerInfo {
+        class CC_AirSpawner
+        {
+            scope = 1;
+            spawner= "CENTCOM Aviation";
+            vehicle = "Dragonfly";
+            Type = "AV-18/S";
             cost = 2;
             priority = 2;
         };
