@@ -37,7 +37,7 @@ class TCP_arifle_MA40_GL;
 class CC_MA40GL: TCP_arifle_MA40_GL
 {
     author= AUTHOR;
-    displayName= "[CENTCOM] MA40 + M301 GL Assault Rifle";
+    displayName= "[CENTCOM] MA40 GL Assault Rifle";
     baseWeapon= "CC_MA40GL";
     magazines[]=
     {
@@ -54,7 +54,7 @@ class TCP_arifle_MA37_GL;
 class CC_MA37GL: TCP_arifle_MA37_GL
 {
     author= AUTHOR;
-    displayName = "[CENTCOM] MA37 + M301 GL Assault Rifle";
+    displayName = "[CENTCOM] MA37 GL Assault Rifle";
     baseWeapon 	= "CC_MA37GL";
     magazines[]=
     {
@@ -89,4 +89,72 @@ class CC_MA37K: OPTRE_MA37K
     };
     HUD_BulletInARows = 2;
     HUD_TotalPosibleBullet = 32;
+};
+
+class OPTRE_MA5B;
+class CC_MA5B: OPTRE_MA5B;
+{
+    baseWeapon= "CC_MA5B";
+    author= AUTHOR;
+    displayName= "[CENTCOM] MA5B Assault Rifle"
+    hiddenSelections[]=
+    {
+        "camo",
+    	"camo1",
+    	"camo2",
+    	"camo_reticle"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "optre_weapons\ar\data\weapon_co.paa",
+        "optre_weapons\ar\data\smartlink_co.paa",
+        "optre_weapons\ar\data\cover_co.paa",
+        "optre_weapons\optics\data\reticles\ma5_reticle.paa"
+    };
+    magazines[]=
+    {
+        "CC_60Rnd_762x51_Mag"
+        "CC_60Rnd_762x51_Mag_Tracer",
+        "CC_60Rnd_762x51_Mag_Tracer_Yellow",
+        "CC_60Rnd_762x51_Mag_Tracer_IR",
+        "CC_60Rnd_762x51_Mag_Dual",
+    };
+    magazineWell[]=
+    {
+        "CC_60Rnd_762x51_MagWell"
+    };
+};
+
+class OPTRE_MA5BGL;
+class CC_MA5BGL: OPTRE_MA5BGL;
+{
+    baseWeapon= "CC_MA5BGL";
+    author= AUTHOR;
+    displayName= "[CENTCOM] MA5B GL Assault Rifle"
+    hiddenSelections[]=
+    {
+        "camo",
+    	"camo1",
+    	"camo2",
+    	"camo_reticle"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "optre_weapons\ar\data\weapon_co.paa",
+        "optre_weapons\ar\data\smartlink_co.paa",
+        "optre_weapons\ar\data\cover_co.paa",
+        "optre_weapons\optics\data\reticles\ma5_reticle.paa"
+    };
+    magazines[]=
+    {
+        "CC_60Rnd_762x51_Mag"
+        "CC_60Rnd_762x51_Mag_Tracer",
+        "CC_60Rnd_762x51_Mag_Tracer_Yellow",
+        "CC_60Rnd_762x51_Mag_Tracer_IR",
+        "CC_60Rnd_762x51_Mag_Dual",
+    };
+    magazineWell[]=
+    {
+        "CC_60Rnd_762x51_MagWell"
+    };
 };
