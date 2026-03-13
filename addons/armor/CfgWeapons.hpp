@@ -1,7 +1,6 @@
 class CfgWeapons
 {
     class VestItem;
-    class ItemInfo;
     class UniformItem;
     class TCP_V_M43D_ODST_4_Black;
     class TCP_V_M43D_Breacher_4_Black;
@@ -87,7 +86,6 @@ class CfgWeapons
 
 
     class TCP_H_Helmet_ECH55D_Black_Black;
-    class TCP_H_Helmet_ECH55D_Black_Black_DP;
     class TCP_H_Helmet_ECH35J_Black_Black;
     class TCP_H_Helmet_ECH35J_Black_Black_DP;
     class TCP_H_Helmet_ECH43A_Black_Black;

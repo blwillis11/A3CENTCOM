@@ -47,10 +47,8 @@ class Extended_PostInit_EventHandlers
 	};
 };
 class RscStandardDisplay;
-class RscDisplayMPPlayers;
 class RscPicture;
 class RscButton;
-class RscControlsGroupNoScrollbars;
 class RscShortcutButton;
 class RscButtonMenu: RscShortcutButton
 {

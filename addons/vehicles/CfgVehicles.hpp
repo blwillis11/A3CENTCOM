@@ -3,18 +3,8 @@ class CfgVehicles {
     class ViewOptics;
     class VehicleSystemsTemplateLeftCommander;
     class VehicleSystemsTemplateRightCommander;
-    class VehicleSystemsTemplateLeftPilot;
-    class VehicleSystemsTemplateRightPilot;
     class Turrets;
     class MainTurret;
-    class CommanderOptics;
-    class Components;
-    class SensorTemplateIR;
-    class SensorTemplateVisual;
-    class SensorTemplateActiveRadar;
-    class SensorTemplatePassiveRadar;
-    class SensorTemplateLaser;
-    class SensorTemplateNV;
     class CargoTurret_01;
     class animationSources;
     class HitPoints;

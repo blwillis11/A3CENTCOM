@@ -53,19 +53,8 @@ class CfgPatches
     };
 };
 
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class MuzzleSlot;
-class CowsSlot;
-class PointerSlot;
-class UnderBarrelSlot; 
-class TopDown;
-class Mode_RailSemiAuto;
-
 class CfgWeapons
 {
-    class WeaponSlotsInfo;
 
     #include "weapons\BattleRifles.hpp"
     #include "weapons\LongRifles.hpp"
@@ -112,15 +101,7 @@ class CC_ace_missileguidance_type_M41_AA: ace_missileguidance_type_Sidewinder
 	seekerMaxRange=5000;
 };
 
-class SensorTemplatePassiveRadar;
-class SensorTemplateAntiRadiation;
-class SensorTemplateActiveRadar;
 class SensorTemplateIR;
-class SensorTemplateVisual;
-class SensorTemplateMan;
-class SensorTemplateLaser;
-class SensorTemplateNV;
-class SensorTemplateDataLink;
 class OPTRE_ace_missileguidance_type_M41_Thermal;
 
 class CfgAmmo

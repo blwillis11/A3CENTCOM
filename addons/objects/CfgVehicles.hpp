@@ -1,7 +1,5 @@
 class CfgVehicles
 {
-	class Module_F;
-
 	class SZ_screen;
 
 	class CC_BriefScreen: SZ_screen
